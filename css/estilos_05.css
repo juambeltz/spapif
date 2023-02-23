@@ -97,17 +97,15 @@
                     margin-left: -3.6rem;                    
                 }
             }            
-
+/*
             @media (max-width: 575px) {
                 .cabezal-logo-spf {
                     height: 6.8rem;
                     width: 6rem;
-                    top:0.3rem;
-                    left:50%;
                     margin-left: -3rem;                    
                 }
             }
-    
+    */
             .cabezal-extremo-derecho {
                 position: absolute;
                 top: 0;
