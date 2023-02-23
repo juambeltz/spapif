@@ -1195,12 +1195,7 @@
         padding: 0;
     }
 
-    .pie-menu__item a {        
-        padding-right: 0.5rem;
-        color:red
-    }
-
-    .sub-footer {
+        .sub-footer {
         background-color: #001227;
         color: #e4ebed;
         font-size: 1.3rem;
