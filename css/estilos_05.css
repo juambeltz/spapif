@@ -65,11 +65,12 @@
             
             .cabezal-extremo-izquierdo{
                 position: absolute;
-                top: 0;
                 left: 0;
+                bottom: 0;
                 width: 18.5rem;
-                height: 20rem;                 
+                height: 18.5rem;                 
                 background-image: url(../img/cabezal-izquierda.png);
+                background-position: bottom right;
             }
     
             @media (max-width: 991px) {
@@ -82,7 +83,7 @@
                 position: absolute;
                 height: 13.6rem;
                 width: 12rem;
-                top:3.5rem;
+                top: 2.8rem;
                 left:2.5rem;
                 cursor: pointer;
                 z-index: 2;
@@ -112,12 +113,13 @@
                 right: 0;
                 width: 18.5rem;
                 background-image: url(../img/cabezal-derecha.png);
+                background-position: bottom left;
             }
 
     
             .cabezal-extremo-derecho-interior {
                 position: relative;            
-                height: 20rem;
+                height: 18.5rem;
             }
 
             @media (max-width: 991px) {
@@ -130,7 +132,7 @@
                 position: absolute;
                 height: 13.1rem;
                 width: 12.2rem;
-                top:3.5rem;
+                top:3rem;
                 right:2.5rem;
             }
     
@@ -147,7 +149,7 @@
     
             /*ARRIBA BLANCO*/
             .cabezal-centro-arriba {
-                height: 8.1rem;
+                height: 6.6rem;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -200,7 +202,7 @@
                     justify-content: space-around;
                 }
                 .nav-principal-gradiente-der {                    
-                    text-align: right;
+                    text-align: right;                   
                 }
             }
 
@@ -246,6 +248,22 @@
             .nav-secundaria-gradiente a {
                 color: #e4ebed;
             } 
+
+            .rojo-pg {
+                color:rgb(243, 56, 56);
+            }
+
+            .verde-pg {
+                color: rgb(48, 252, 29);
+            }
+
+            .amarillo-pg{
+                color: rgb(248, 244, 27);
+            }
+
+            .azul-pg{
+                color: rgb(130, 180, 245);
+            }
 
             /*CELESTE*/
             .cabezal-centro-abajo-celeste{                
