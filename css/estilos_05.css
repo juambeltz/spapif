@@ -75,7 +75,7 @@
                 bottom: 0;
                 width: 18.5rem;
                 height: 18.5rem;                 
-                background-image: url(../img/cabezal-izquierda.png);
+                background-image: url(../img/cabezal-izquierda.webp);
                 background-position: bottom right;
             }
     
@@ -118,7 +118,7 @@
                 top: 0;
                 right: 0;
                 width: 18.5rem;
-                background-image: url(../img/cabezal-derecha.png);
+                background-image: url(../img/cabezal-derecha.webp);
                 background-position: bottom left;
             }
 
