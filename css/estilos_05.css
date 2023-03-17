@@ -319,7 +319,8 @@
             ul.nav-celeste-opciones {                
                 list-style-type: none;
                 display: flex;
-                padding: 0;                
+                padding: 0;
+                margin: 0;                
             }
 
             @media (max-width: 767px) {
@@ -1215,5 +1216,22 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    /*** TABLAS ****/
+
+    .table-caption {
+        background-color:#002046;
+        color: #e4ebed; 
+        padding: 5px 10px; 
+        caption-side: top
+    }
+    
+    .tb-format-jj {
+        border: 1PX solid black;
+    }
+
+    .tab-goleadores td {
+        vertical-align: middle;
     }
 
