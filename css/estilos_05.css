@@ -1168,7 +1168,7 @@
     @media (max-width: 991px) {
         .pie__cuerpo{    
             height: auto;    
-
+            margin: 2rem 0;
         }
     } 
 
