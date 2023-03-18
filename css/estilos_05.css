@@ -1143,7 +1143,8 @@
 
         background-image: linear-gradient(to right , #9d1d1c, #002046);
         color: #e4ebed;
-        height: 25rem;
+        max-height: 130rem;
+
     }
 
     .pie__interior {
