@@ -1159,7 +1159,7 @@
     }
 
     .pie__cuerpo{    
-        height: 25rem;    
+        min-height: 25rem;    
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1167,7 +1167,7 @@
 
     @media (max-width: 991px) {
         .pie__cuerpo{    
-            min-height: 25rem;    
+    
         }
     } 
 
