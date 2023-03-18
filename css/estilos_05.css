@@ -1211,6 +1211,10 @@
         padding: 0;
     }
 
+    .pie-menu__items {
+        font-size: 1.6rem;
+    }
+
         .sub-footer {
         background-color: #001227;
         color: #e4ebed;
