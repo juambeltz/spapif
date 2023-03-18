@@ -1158,7 +1158,8 @@
         color: #e4ebed;
     }
 
-    .pie__cuerpo{              
+    .pie__cuerpo{    
+        height: 25rem;    
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1166,18 +1167,18 @@
 
     @media (max-width: 991px) {
         .pie__cuerpo{    
-            height: auto;    
+            min-height: 25rem;    
         }
     } 
 
     @media (max-width: 767px) {
         .pie__cuerpo{  
-            flex-wrap: wrap; 
+            flex-wrap: wrap;
+
         } 
     }
     @media (max-width: 575px) {
         .pie__cuerpo{  
-            min-height: 25rem;  
             flex-direction: column;
             justify-content: space-around;
             align-items: flex-start; 
