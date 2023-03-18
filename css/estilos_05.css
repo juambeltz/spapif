@@ -1143,7 +1143,7 @@
 
         background-image: linear-gradient(to right , #9d1d1c, #002046);
         color: #e4ebed;
-        max-height: 130rem;
+        max-height: 150rem;
 
     }
 
@@ -1168,7 +1168,6 @@
     @media (max-width: 991px) {
         .pie__cuerpo{    
             height: auto;    
-            margin: 2rem 0;
         }
     } 
 
@@ -1182,6 +1181,8 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: flex-start; 
+            margin: 2rem 0;
+            margin-top: 5rem;
         } 
     } 
 
