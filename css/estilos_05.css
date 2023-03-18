@@ -1159,15 +1159,16 @@
     }
 
     .pie__cuerpo{    
-        height: 25rem;    
-        display: flex;
+        height: auto;
+        min-height: 25rem;
         justify-content: space-between;
         align-items: center;
+        padding: 2rem 0 ;
     }
 
     @media (max-width: 991px) {
         .pie__cuerpo{    
-            height: auto;    
+;    
 
         }
     } 
