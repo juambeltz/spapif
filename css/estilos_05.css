@@ -110,6 +110,13 @@
                 z-index: 2;
             }
 
+            .logo{
+                transition: all .2s ease-in-out;
+             }
+             .logo:hover{
+                transform: scale(1.1);
+             }
+
             @media (max-width: 992px) {
                 .cabezal-logo-spf {
                     height: 8.2rem;
@@ -180,6 +187,9 @@
                 width: 3.2rem;
             }
 
+            .escudo-sm { transition: all .2s ease-in-out; }
+            .escudo-sm:hover { transform: scale(1.1); }
+
             @media (max-width: 1200px) {
                 .logos-cabezal-clubes-min img {
                     width: 2.6rem;
@@ -214,6 +224,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
+                font-size: 1.7rem;
+                font-weight: 500;
 
             }
  
