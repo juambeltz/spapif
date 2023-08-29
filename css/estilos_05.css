@@ -252,7 +252,8 @@
 
 
             .activerPrim {
-                border-top-color: white !important;;    
+                border-top-color: white !important;
+                font-weight: bold;    
                 }
 
             @media (max-width: 991px) {
@@ -387,6 +388,12 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                border: 5px solid transparent;
+            }
+            
+            .activer {
+                border-bottom-color: #9d1d1c !important;
+                font-weight: bold;
             }
 
             @media (max-width: 767px) {
