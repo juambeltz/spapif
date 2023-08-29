@@ -206,18 +206,7 @@
             }
 
 
-            /*GRADIENTE*/
-            
-           .activerPrim {
-                border-top: 5px solid white;
-                }
-
-            .activer {
-                border-bottom: 5px solid darkred;
-                color: white;
-                }
-
-
+           
             /*GRADIENTE*/
             .cabezal-centro-medio-gradiente {
                 background-image: linear-gradient(to right , #9d1d1c, #002046);
@@ -242,13 +231,46 @@
 
             }
 
-            .nav-principal-gradiente div{
+            /* .nav-principal-gradiente div{
                 display: flex;
                 align-items: center; 
                 justify-content: flex-start;
                 margin-right: 2rem; 
                 border: 5px solid transparent ;                
+            } */
+
+            .nav-principal-gradiente .nav-principal-gradiente-izq {
+                display: flex;
+                align-items: center; 
+                justify-content: center;
+                margin-right: 2rem; 
+                border: 5px solid transparent ;
             }
+
+            .nav-principal-gradiente .nav-principal-gradiente-der {
+                display: flex;
+                align-items: center; 
+                justify-content: center;
+                margin-right: 0rem; 
+                border: 5px solid transparent ;
+            }
+
+            @media (max-width: 575px) {
+                .nav-principal-gradiente .nav-principal-gradiente-izq {                    
+                    align-items: center; 
+                    justify-content: flex-start;
+                    margin-right: 0rem; 
+                    
+                }
+    
+                .nav-principal-gradiente .nav-principal-gradiente-der {
+                   
+                    align-items: center; 
+                    justify-content: flex-end;
+                    margin-right: 0rem; 
+
+                }
+            }  
 
 
             .activerPrim {
@@ -279,6 +301,7 @@
                 width: 75%;
                 }
             }
+
             .nav-principal-gradiente a {
                 /* margin: 0 20px 0 0; 28.8 */
                 color: #e4ebed;
