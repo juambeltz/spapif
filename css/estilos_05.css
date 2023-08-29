@@ -449,6 +449,13 @@
             .nav-celeste-login {
                 display: flex;
                 align-items: center;
+                justify-content: flex-end;
+                gap: 1.5rem
+            }
+
+            .semaforo img {
+                height: 30px;
+                width: auto;
             }
             
             /* SPONSORS */
