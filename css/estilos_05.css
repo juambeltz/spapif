@@ -205,6 +205,19 @@
                 }     
             }
 
+
+            /*GRADIENTE*/
+            
+           .activerPrim {
+                border-top: 5px solid white;
+                }
+
+            .activer {
+                border-bottom: 5px solid darkred;
+                color: white;
+                }
+
+
             /*GRADIENTE*/
             .cabezal-centro-medio-gradiente {
                 background-image: linear-gradient(to right , #9d1d1c, #002046);
@@ -222,13 +235,25 @@
             .nav-principal-gradiente {
                 height: 6.8rem;
                 display: flex;
-                align-items: center;
+                /* align-items: center; 28.8 */
                 justify-content: flex-start;
                 font-size: 1.7rem;
                 font-weight: 500;
 
             }
- 
+
+            .nav-principal-gradiente div{
+                display: flex;
+                align-items: center; 
+                justify-content: flex-start;
+                margin-right: 2rem; 
+                border: 5px solid transparent ;                
+            }
+
+
+            .activerPrim {
+                border-top-color: white !important;;    
+                }
 
             @media (max-width: 991px) {
                 .nav-principal-gradiente {                    
@@ -254,7 +279,7 @@
                 }
             }
             .nav-principal-gradiente a {
-                margin: 0 20px 0 0;
+                /* margin: 0 20px 0 0; 28.8 */
                 color: #e4ebed;
             }
 
@@ -304,8 +329,7 @@
             }
     
             .nav-celeste {            
-                display: flex;
-                align-items: center;
+                display: flex;               
                 justify-content: space-between; 
                 height: 5.1rem;
                 padding: 0 16px;
@@ -358,19 +382,34 @@
                     z-index: 3;
                 }
             } 
+            
+            ul.nav-celeste-opciones li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
             @media (max-width: 767px) {
                 ul.nav-celeste-opciones li {
                     margin: 1rem;
+                    border: none;
                 }
             }    
+            
             ul.nav-celeste-opciones li {
                 margin-right: 2rem;
             }
 
             ul.nav-celeste-opciones li a {
                 display: inline-block;
+                text-decoration: none;
             }
-    
+
+            .nav-celeste-login {
+                display: flex;
+                align-items: center;
+            }
+            
             /* SPONSORS */
             
             .sponsors {

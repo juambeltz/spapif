@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h1>vvv activos</h1>
+<p>Highlight the active/current (pressed) button.</p>
+  
+  <div id="myDIV" style="background-color: salmon;">
+    <a class="btn active">1</a>
+    <a class="btn">2</a>
+    <a class="btn">3</a>
+    <a class="btn">4</a>
+    <a class="btn">5</a>
+  </div>
+
+  <script>
+  // Add active class to the current button (highlight it)
+const miHeader = document.getElementById("myDIV");
+//console.log(botonesSecundarios)
+
+function cambiaActivo(evt) {
+    evt.stopPropagation();    
+    //console.log('jjjjjj')
+    let current = document.getElementsByClassName("active");    
+    current[0].className = current[0].className.replace(" active", "");
+    this.classList.toggle('active');
+    //console.log(this)    
+  }
+
+document.querySelectorAll('.btn').forEach( el => {
+  el.addEventListener('click', cambiaActivo);  
+});
+
+//miHeader.addEventListener('click', otraAlerta)
+
+// function otraAlerta() {   
+//     alert('Esto es una alerta')
+// }
+
+
+
+
+  </script>
+
+  </body>
+  </html>
+
+
+  ###################
+
+  <script defer>
+    const hamburger = document.getElementById('hamburger');
+    const navCelesteOpciones = document.getElementById('nav-celeste-opciones');
+    hamburger.addEventListener('click', () => {
+        navCelesteOpciones.classList.toggle('mostrar');
+    }
+    );
+</script>
+<style>
+
+    .activer {
+    border-bottom: 5px solid darkred;
+    color: white;
+    }
+
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const contenedorSecundarios = document.getElementById('nav-celeste-opciones').children[0]
+        contenedorSecundarios.classList.add('activer')
+       
+    });
+
+
+    const botonesSecundarios = document.querySelectorAll('.nav-celeste-opciones a')
+    //console.log(botonesSecundarios)
+
+    botonesSecundarios.forEach( el => {
+        el.addEventListener('click', cambiaActivo);  
+    });
+
+    function cambiaActivo(evt) {
+        evt.preventDefault();
+        evt.stopPropagation(); 
+        
+        const activasAnteriores = document.querySelectorAll('.active')
+        activasAnteriores.forEach( el => {
+            if(el.classList.contains('active')) {
+                el.classList.remove('active')
+            } 
+        });
+
+        const activasAnterioresPadres = document.querySelectorAll('.activer')
+        activasAnterioresPadres.forEach( elp => {
+            if(elp.classList.contains('activer')) {
+                elp.classList.remove('activer')
+            } 
+        });
+        this.classList.toggle('active');
+        const padre = evt.target.parentElement;
+        padre.classList.toggle('activer');
+        
+    }
+</script>
