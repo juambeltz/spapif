@@ -274,9 +274,15 @@
 
 
             .activerPrim {
-                border-top-color: white !important;
+                border-top-color: #e4ebed !important;
                 font-weight: bold;    
                 }
+
+                @media (max-width: 450px) {
+                    .activerPrim {
+                        border-top-color: transparent !important;                           
+                        }
+                }                
 
             @media (max-width: 991px) {
                 .nav-principal-gradiente {                    
@@ -297,7 +303,12 @@
 
             @media (max-width: 575px) {
                 .nav-principal-gradiente-izq  a, .nav-principal-gradiente-der  a  {
-                display: inline-block;
+                display: inline-block;                
+                }
+            }
+
+            @media (max-width: 450px) {
+                .nav-principal-gradiente-izq  a, .nav-principal-gradiente-der  a  {                
                 width: 75%;
                 }
             }
