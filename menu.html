@@ -3,21 +3,70 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 10px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  font-size: 18px;
+#myDIV {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;  
+
+  height: 6rem;
+  background-color: antiquewhite;
 }
 
+
 /* Style the active class, and buttons on mouse-over */
-.active, .btn:hover {
-  background-color: #666;
-  color: white;
+.soyUL {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1rem;
+
+  width: 69%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+  
+  border: 1px solid green;
 }
+
+.soyUL li {  
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  background-color: red;
+
+}
+
+a.btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 45px;
+
+  padding: 0 2rem;  
+  font-size: 27px;
+
+  background-color: darkorange;
+  color: white;
+  border: 8px solid transparent;
+
+  cursor: pointer;  
+}
+
+.btn:hover {
+  /* background-color: #777;  
+  border-bottom-color: aqua; */
+  color: bisque;
+
+}
+
+.btn:focus {
+  background-color: darkorange;
+  border-bottom-color: darkblue;
+}
+
 </style>
 </head>
 <body>
@@ -25,15 +74,17 @@
 <h1>vvv activos</h1>
 <p>Highlight the active/current (pressed) button.</p>
   
-  <div id="myDIV" style="background-color: salmon;">
-    <a class="btn active">1</a>
-    <a class="btn">2</a>
-    <a class="btn">3</a>
-    <a class="btn">4</a>
-    <a class="btn">5</a>
+  <div id="myDIV">
+    <ul class="soyUL">
+    <li><a href="#" class="btn active"><span>1</span></a></li>
+    <li><a href="#" class="btn"><span>2</span></a></li>
+    <li><a href="#" class="btn">3</a></li>
+    <li><a href="#" class="btn">4</a></li>
+    <li><a href="#" class="btn">5</a></li> 
+    </ul>    
   </div>
 
-  <script>
+  <!-- <script>
   // Add active class to the current button (highlight it)
 const miHeader = document.getElementById("myDIV");
 //console.log(botonesSecundarios)
@@ -49,77 +100,19 @@ function cambiaActivo(evt) {
 
 document.querySelectorAll('.btn').forEach( el => {
   el.addEventListener('click', cambiaActivo);  
-});
+}); -->
 
-//miHeader.addEventListener('click', otraAlerta)
+<!-- //miHeader.addEventListener('click', otraAlerta)
 
 // function otraAlerta() {   
 //     alert('Esto es una alerta')
-// }
+// } -->
 
 
 
 
-  </script>
-
-  </body>
-  </html>
-
-
-  ###################
-
-  <script defer>
-    const hamburger = document.getElementById('hamburger');
-    const navCelesteOpciones = document.getElementById('nav-celeste-opciones');
-    hamburger.addEventListener('click', () => {
-        navCelesteOpciones.classList.toggle('mostrar');
-    }
-    );
-</script>
-<style>
-
-    .activer {
-    border-bottom: 5px solid darkred;
-    color: white;
-    }
-
-</style>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const contenedorSecundarios = document.getElementById('nav-celeste-opciones').children[0]
-        contenedorSecundarios.classList.add('activer')
-       
-    });
+  <!-- </script> -->
+</body>
+</html>
 
 
-    const botonesSecundarios = document.querySelectorAll('.nav-celeste-opciones a')
-    //console.log(botonesSecundarios)
-
-    botonesSecundarios.forEach( el => {
-        el.addEventListener('click', cambiaActivo);  
-    });
-
-    function cambiaActivo(evt) {
-        evt.preventDefault();
-        evt.stopPropagation(); 
-        
-        const activasAnteriores = document.querySelectorAll('.active')
-        activasAnteriores.forEach( el => {
-            if(el.classList.contains('active')) {
-                el.classList.remove('active')
-            } 
-        });
-
-        const activasAnterioresPadres = document.querySelectorAll('.activer')
-        activasAnterioresPadres.forEach( elp => {
-            if(elp.classList.contains('activer')) {
-                elp.classList.remove('activer')
-            } 
-        });
-        this.classList.toggle('active');
-        const padre = evt.target.parentElement;
-        padre.classList.toggle('activer');
-        
-    }
-</script>

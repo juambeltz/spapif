@@ -19,23 +19,6 @@ botonesMenuActivo.forEach( el => {
     }         
 });
 
-// function cambiaActivo(evt) {
-//     evt.stopPropagation(); 
-
-//    document.querySelectorAll('.activer').forEach( el => {
-//         if (el.parentElement.parentElement.classList.contains('nav-principal-gradiente')) {
-//             evt.target.parentElement.classList.remove('activer')
-//         } else if (el.parentElement.parentElement.classList.contains('nav-celeste-opciones')) {
-//             evt.target.parentElement.classList.remove('activer')
-//         }
- 
-//     });
-
-//     evt.target.parentElement.classList.toggle('activer');
-    
-// }
-
-
 function cambiaActivoPrim(evt) {
     evt.stopPropagation(); 
     document.querySelectorAll('.activerPrim').forEach( el => el.classList.remove('activerPrim'));
@@ -64,5 +47,5 @@ const hamburger = document.getElementById('hamburger');
 const navCelesteOpciones = document.getElementById('nav-celeste-opciones');
 hamburger.addEventListener('click', () => {
     navCelesteOpciones.classList.toggle('mostrar');
-}
+    }
 );
